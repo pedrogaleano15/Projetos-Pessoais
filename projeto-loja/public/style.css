@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+#menu-container {
+  position: relative;
+}
+
+#menu-icon {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu-principal {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 100;
+}
+
+#menu-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-principal li {
+  padding: 8px 12px;
+}
+
+#menu-principal a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu-principal a:hover {
+  text-decoration: underline;
+}
+
+.oculto {
+  display: none !important;
+}

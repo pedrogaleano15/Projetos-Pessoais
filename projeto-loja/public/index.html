@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Minha Loja</h1>
+      <div id="menu-container">
+        <button id="menu-icon">&#8942;</button>
+        <nav id="menu-principal" class="oculto">
+          <ul>
+            <li><a href="#" id="link-login">Login</a></li>
+            <li><a href="#" id="link-cadastro">Cadastrar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="produtos-container" class="produtos">
+        </section>
+
+      <section id="area-gerenciamento" class="oculto">
+        <section id="formulario-login">
+          <h2>Login</h2>
+          <form id="form-login">
+            <label for="email-login">E-mail:</label>
+            <input type="email" id="email-login" name="email" required />
+            <br /><br />
+            <label for="senha-login">Senha:</label>
+            <input type="password" id="senha-login" name="senha" required />
+            <br /><br />
+            <button type="submit">Entrar</button>
+          </form>
+        </section>
+
+        <section id="formulario-cadastro" class="oculto">
+          <h2>Cadastrar</h2>
+          <form id="form-cadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br /><br />
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required />
+            <br /><br />
+            <p>Você é um:</p>
+            <input type="radio" id="role-comprador" name="role" value="comprador" checked />
+            <label for="role-comprador">Comprador</label>
+            <input type="radio" id="role-vendedor" name="role" value="vendedor" />
+            <label for="role-vendedor">Vendedor</label>
+            <br /><br />
+            <button type="submit">Cadastrar</button>
+          </form>
+        </section>
+
+        <section id="formulario-produto" class="oculto">
+          <h2>Adicionar Novo Produto</h2>
+          <form id="form-adicionar-produto">
+            <label for="nome-produto">Nome do Produto:</label>
+            <input type="text" id="nome-produto" name="nome" required />
+            <br /><br />
+            <label for="preco-produto">Preço:</label>
+            <input type="number" id="preco-produto" name="preco" step="0.01" required />
+            <br /><br />
+            <label for="estoque-produto">Quantidade em Estoque:</label>
+            <input type="number" id="estoque-produto" name="emEstoque" required />
+            <br /><br />
+            <button type="submit">Adicionar Produto</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
